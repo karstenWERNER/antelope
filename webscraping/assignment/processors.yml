@@ -2,20 +2,8 @@ name:
     css: '#productTitle'
     type: Text
 
-product_about:
-    css: '#feature-bullets'
-    multiple: true
-    type: Text
-    children:
-        info:
-            css: th
-            type: Text
-        value:
-            css: td
-            type: Text
-
 product_summary:
-    css: '#productDescription_feature_div'
+    css: '#productDetails_techSpec_section_2 tr'
     multiple: true
     type: Text
     children:
@@ -27,7 +15,7 @@ product_summary:
             type: Text
 
 product_tech_spec:
-    css: '.a-expander-inline-container:nth-child(1) .a-section-expander-inner'
+    css: '#productDetails_techSpec_section_1 tr'
     multiple: true
     type: Text
     children:
@@ -38,20 +26,9 @@ product_tech_spec:
             css: td
             type: Text
 
-product_tech_spec_other:
-    css: '.a-expander-inline-container+ .a-expander-inline-container .a-section-expander-inner'
-    multiple: true
-    type: Text
-    children:
-        info:
-            css: th
-            type: Text
-        value:
-            css: td
-            type: Text
 
 product_addl_info:
-    css: '#productDetails_db_sections'
+    css: '#productDetails_detailBullets_sections1 tr'
     multiple: true
     type: Text
     children:
@@ -61,6 +38,7 @@ product_addl_info:
         value:
             css: td
             type: Text
+
 
 seller:
     css: '#sellerProfileTriggerId'
@@ -78,14 +56,10 @@ freq_bought_link:
     css: '#sims-fbt-form .a-size-base.a-link-normal'
     type: Link
 
-related_link:
-    css: '#sims-fbt-form .a-size-base.a-link-normal'
-    type: Link
-
-related_link:
-    css: '#sims-fbt-form .a-size-base.a-link-normal'
-    type: Text
-
 link_to_all_reviews:
-    css: '#cr-pagination-footer-0 .a-text-bold'
+    css: 'div.card-padding a.a-link-emphasis'
     type: Link
+product_about:
+    css: '#feature-bullets .a-list-item'
+    multiple: true
+    type: Text

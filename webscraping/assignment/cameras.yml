@@ -1,21 +1,8 @@
 name:
     css: 'h1.a-size-large span.a-size-large'
     type: Text
-
-product_about:
-    css: '#feature-bullets'
-    multiple: true
-    type: Text
-    children:
-        info:
-            css: th
-            type: Text
-        value:
-            css: td
-            type: Text
-
 product_summary:
-    css: 'div.aplus-v2'
+    css: '#productDetails_techSpec_section_2 tr'
     multiple: true
     type: Text
     children:
@@ -25,9 +12,8 @@ product_summary:
         value:
             css: td
             type: Text
-
 product_tech_spec:
-    css: 'div.a-row.a-spacing-top-base div.a-column:nth-of-type(1) div.a-row'
+    css: '#productDetails_techSpec_section_1 tr'
     multiple: true
     type: Text
     children:
@@ -37,21 +23,8 @@ product_tech_spec:
         value:
             css: td
             type: Text
-
-product_tech_spec_other:
-    css: ''
-    multiple: true
-    type: Text
-    children:
-        info:
-            css: th
-            type: Text
-        value:
-            css: td
-            type: Text
-
 product_addl_info:
-    css: ''
+    css: '#productDetails_detailBullets_sections1 tr'
     multiple: true
     type: Text
     children:
@@ -61,27 +34,29 @@ product_addl_info:
         value:
             css: td
             type: Text
-
 seller:
-    css: 'span.a-truncate-cut a'
+    css: 'tr:nth-of-type(2) td.tabular-buybox-column'
     type: Text
-
 seller_link:
-    css: 'span.a-truncate-cut a'
+    css: 'tr:nth-of-type(2) td.tabular-buybox-column'
     type: Link
-
 freq_bought:
     css: 'div.sims-fbt-checkbox-label a.a-size-base'
     type: Text
-
 freq_bought_link:
     css: 'div.sims-fbt-checkbox-label a.a-size-base'
     type: Link
-
-related:
-    css: 'div.celwidget.pd_rd_w-cnM5f ol.a-carousel'
-    type: Text
-
 link_to_all_reviews:
     css: 'a.a-link-emphasis'
     type: Link
+product_summary_full:
+    css: 'div.aplus-v2'
+    multiple: true
+    type: Text
+product_about:
+    css: '#feature-bullets .a-list-item'
+    multiple: true
+    type: Text
+product_description:
+    css: '#productDescription p'
+    type: Text

@@ -1,0 +1,32 @@
+product_tech_spec:
+.prodDetSectionEntry , #productDetails_detailBullets_sections1 td
+# works but output is not a table
+
+
+
+product_tech_spec:
+    css: '#productDetails_detailBullets_sections1 .a-size-base'
+    multiple: true
+    type: Text
+    children:
+        info:
+            css: th
+            type: Text
+        value:
+            css: td
+            type: Text
+
+product_about:
+    css: '#feature-bullets .a-list-item'
+    multiple: true
+    type: Text
+    children:
+        info:
+            css: th
+            type: Text
+        value:
+            css: td
+            type: Text
+
+
+#sp_detail2_B084ZV73YR .sponsored-products-truncator-truncated

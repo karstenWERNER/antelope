@@ -1,21 +1,8 @@
 name:
-    css: '#productTitle'
+    css: 'h1.a-size-large span.a-size-large'
     type: Text
-
-product_about:
-    css: '#feature-bullets'
-    multiple: true
-    type: Text
-    children:
-        info:
-            css: th
-            type: Text
-        value:
-            css: td
-            type: Text
-
 product_summary:
-    css: '#productDescription p'
+    css: '#productDetails_techSpec_section_2 tr'
     multiple: true
     type: Text
     children:
@@ -25,9 +12,8 @@ product_summary:
         value:
             css: td
             type: Text
-
 product_tech_spec:
-    css: '.a-expander-inline-container:nth-child(1) .a-section-expander-inner'
+    css: '#productDetails_techSpec_section_1 tr'
     multiple: true
     type: Text
     children:
@@ -37,21 +23,8 @@ product_tech_spec:
         value:
             css: td
             type: Text
-
-product_tech_spec_other:
-    css: '.a-expander-inline-container+ .a-expander-inline-container .a-section-expander-inner'
-    multiple: true
-    type: Text
-    children:
-        info:
-            css: th
-            type: Text
-        value:
-            css: td
-            type: Text
-
 product_addl_info:
-    css: '#productDetails_db_sections'
+    css: '#productDetails_detailBullets_sections1 tr'
     multiple: true
     type: Text
     children:
@@ -61,31 +34,29 @@ product_addl_info:
         value:
             css: td
             type: Text
-
 seller:
-    css: '#sellerProfileTriggerId'
+    css: 'tr:nth-of-type(2) td.tabular-buybox-column'
     type: Text
-
 seller_link:
-    css: '#sellerProfileTriggerId'
+    css: 'tr:nth-of-type(2) td.tabular-buybox-column'
     type: Link
-
 freq_bought:
-    css: '#sims-fbt-form .a-size-base.a-link-normal'
+    css: 'div.sims-fbt-checkbox-label a.a-size-base'
     type: Text
-
 freq_bought_link:
-    css: '#sims-fbt-form .a-size-base.a-link-normal'
+    css: 'div.sims-fbt-checkbox-label a.a-size-base'
     type: Link
-
-related_link:
-    css: '#sims-fbt-form .a-size-base.a-link-normal'
-    type: Link
-
-related_link:
-    css: '#sims-fbt-form .a-size-base.a-link-normal'
-    type: Text
-
 link_to_all_reviews:
-    css: '#cr-pagination-footer-0 .a-text-bold'
+    css: 'a.a-link-emphasis'
     type: Link
+product_summary_full:
+    css: 'div.aplus-v2'
+    multiple: true
+    type: Text
+product_about:
+    css: '#feature-bullets .a-list-item'
+    multiple: true
+    type: Text
+product_description:
+    css: '#productDescription p'
+    type: Text
