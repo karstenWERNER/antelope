@@ -60,3 +60,6 @@ product_about:
 product_description:
     css: '#productDescription p'
     type: Text
+product_price:
+    css: '#price_inside_buybox'
+    type: Text

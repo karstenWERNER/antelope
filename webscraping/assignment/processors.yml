@@ -63,3 +63,6 @@ product_about:
     css: '#feature-bullets .a-list-item'
     multiple: true
     type: Text
+product_price:
+    css: '#price_inside_buybox'
+    type: Text
