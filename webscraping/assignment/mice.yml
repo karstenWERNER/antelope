@@ -63,3 +63,6 @@ product_description:
 product_price:
     css: '#price_inside_buybox'
     type: Text
+product_add_info:
+    css: '#productDetails_db_sections'
+    type: Text

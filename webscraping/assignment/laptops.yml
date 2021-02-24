@@ -63,3 +63,12 @@ product_description:
 product_price:
     css: '#price_inside_buybox'
     type: Text
+product_tech_1:
+    css: '.a-expander-inline-container:nth-child(1) .a-section-expander-inner'
+    type: Text
+product_tech_2:
+    css: '.a-expander-inline-container+ .a-expander-inline-container .a-section-expander-innerp'
+    type: Text
+product_add_info:
+    css: '#productDetails_db_sectionsp'
+    type: Text
