@@ -1,0 +1,34 @@
+pip install wwo-hist
+Signup here for a free 60 days account (no credit card required) https://www.worldweatheronline.com/developer/signup.aspx
+Documentation for wwo-hist: https://github.com/ekapope/WorldWeatherOnline
+
+import numpy as np
+import pandas as pd
+
+from wwo_hist import retrieve_hist_data
+import os
+
+frequency=1
+start_date = '01-JAN-2011'
+end_date = '31-DEC-2012'
+api_key = '<your api key>'
+location_list = ['washington']
+
+hist_weather_data = retrieve_hist_data(api_key,
+                                location_list,
+                                start_date,
+                                end_date,
+                                frequency,
+                                location_label = False,
+                                export_csv = True,
+                                store_df = True)
+
+Will download weather data for washington with hourly granularity into a file 'washington.csv'.
+
+wash_df = pd.read_csv("washington.csv")
+wash_df['date_time'] = wash_df['date_time'].astype('datetime64')
+
+Optional: Combine with the UCI dataset (after feature selection and normalising)
+hdf['dteday'] = hdf['dteday'].astype('datetime64')
+hdf['date_time'] = pd.to_datetime(hdf.dteday) + pd.to_timedelta(hdf.hr, unit='h')
+capital_df = pd.merge(hdf, wash_df, on='date_time')
