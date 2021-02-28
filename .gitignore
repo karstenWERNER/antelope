@@ -28,3 +28,11 @@ bikeshare/CB-2019-2020/201901-capitalbikeshare-tripdata.csv
 bikeshare/Weather_data/GHCND_documentation.pdf
 bikeshare/Weather_data/POWER_SinglePoint_Daily_20190101_20201231_038d88N_77d30W_5c42797a.csv
 bikeshare/Weather_data/POWER_SinglePoint_Daily_20190101_20201231_038d88N_77d30W_5c42797a.json
+webscraping/assignment/laptops_output.jsonl
+webscraping/assignment/processors_output.jsonl
+webscraping/assignment/cameras_output.jsonl
+webscraping/assignment/headphones_output.jsonl
+webscraping/assignment/keyboards_output.jsonl
+webscraping/assignment/mice_output.jsonl
+webscraping/assignment/monitors_output.jsonl
+webscraping/assignment/smartphones_output.jsonl
