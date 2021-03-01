@@ -1,0 +1,11 @@
+RELATIONAL
+SQL Structured Query Language
+eliminate redundancy (by using a clever db design)
+allow to consume huge amounts of data
+there is the concept of "tuple" in SQL (like row or record)
+Schema: astract structure of tables (int, varchar, .....)
+Primary key is needed for all tables (cannot be duplicate or NULL, but it can be 0)
+Foreign Key in a table refers to a primary key in another table (can be duplicate) 
+DDL Data Dictionary Language => Schema (create table dep (dept_no: varchar(64))), something like that
+DQL Data Query Language: select * from dep;
+
