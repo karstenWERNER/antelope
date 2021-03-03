@@ -9,3 +9,8 @@ Foreign Key in a table refers to a primary key in another table (can be duplicat
 DDL Data Dictionary Language => Schema (create table dep (dept_no: varchar(64))), something like that
 DQL Data Query Language: select * from dep;
 
+If you're using an operator with values that are non-numeric, you need to put the value in single quotes: 'value'.
+The double quotes (as opposed to single: ') are a way of indicating that you are referring to the column name.
+Note: SQL uses single quotes to reference column values.
+
+You can use >, <, and the rest of the comparison operators on non-numeric columns as well—they filter based on alphabetical order.
