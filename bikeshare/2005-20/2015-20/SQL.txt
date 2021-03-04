@@ -14,3 +14,23 @@ The double quotes (as opposed to single: ') are a way of indicating that you are
 Note: SQL uses single quotes to reference column values.
 
 You can use >, <, and the rest of the comparison operators on non-numeric columns as well—they filter based on alphabetical order.
+
+SELECT AVG(high)
+  FROM tutorial.aapl_historical_stock_price
+ WHERE high IS NOT NULL
+The above query produces the same result as the following query:
+
+SELECT AVG(high)
+  FROM tutorial.aapl_historical_stock_price
+
+SELECT player_name,
+       year,
+       CASE WHEN year = 'SR' THEN 'yes'
+            ELSE NULL END AS is_a_senior
+  FROM benn.college_football_players
+
+  The CASE statement always goes in the SELECT clause
+CASE must include the following components: WHEN, THEN, and END. ELSE is an optional component.
+You can make any conditional statement using any conditional operator (like WHERE ) between WHEN and THEN. This includes stringing together multiple conditional statements using AND and OR.
+You can include multiple WHEN statements, as well as an ELSE statement to deal with any unaddressed conditions.
+
